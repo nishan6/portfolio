@@ -42,11 +42,11 @@ export const crafts = [
 
 export const formats = ['Concerts and festivals', 'Esports', 'Live sport', 'Corporate and brand shows'];
 
-// LED wall rows. Each non-empty list becomes one scrolling row.
+// LED wall rows, alphabetical. Each non-empty list becomes one scrolling row.
 export const wall = [
-  { label: 'Clients', items: ['Zomato', 'HCL', 'TM Talent Management', 'Mysuru Yuva Dasara', 'Rockski EMG', 'Tesseract', 'Nodwin', 'Me.gong', 'VAS.Inc', 'Magnanimous Ventures'] },
-  { label: 'Artists', items: ['Arijit Singh', 'Sunidhi Chauhan', 'Jasleen Royal', 'Shilpa Rao', 'Karan Aujla', 'Ronan Keating', 'Rito Riba', 'Shankuraj Konwar', 'Boney M.', 'Akon', 'Clean Bandit', 'R3HAB', 'Alan Walker', 'Sanam', 'And many more'] },
-  { label: 'Shows', items: ['Cherry Blossom Festival', 'Myntra Glamfest', 'Me.Gong Festival', 'Karbi Youth Festival', 'Mising Youth Festival', 'Makar Sankranti Festival Sonar', 'Coke Studio Bharat Live', 'Royal Stag Boombox', 'Bollywood Music Project', 'Ensemble Valhalla', 'And many more'] },
+  { label: 'Clients', items: ['BookMyShow', 'Ferrari', 'Google', 'HCL', 'HSBC', 'IIT-BOM', 'Magnanimous Ventures', 'Me.gong', 'Meta', 'Mysuru Yuva Dasara', 'Nodwin', 'Rockski EMG', 'Tesseract', 'TM Talent Management', 'VAS.Inc', 'Zomato'] },
+  { label: 'Artists', items: ['Akon', 'Alan Walker', 'Arijit Singh', 'Blue', 'Boney M.', 'Clean Bandit', 'Euphoria', 'Europe', 'Gajendra Verma', 'Girish and the Chronicles', "Guns N' Roses", 'Hybrid Theory', 'Indus Creed', 'Jasleen Royal', 'Jay Sean', 'Jonas Blue', 'Karan Aujla', 'Marcin', 'Michael Learns to Rock', 'Mr. Big', 'Ne-Yo', 'Pink Panda', 'Post Malone', 'Pritam', 'R3HAB', 'Rito Riba', 'Ronan Keating', 'Salim-Sulaiman', 'Sanam', 'Shankuraj Konwar', 'Shilpa Rao', 'Sunidhi Chauhan', 'Tsumyoki', 'Udita Goswami', 'Yungblud', 'And many more'] },
+  { label: 'Shows', items: ['Bandland', 'Bollywood Music Project', 'Cherry Blossom Festival', 'Coke Studio Bharat', 'Coke Studio Bharat Live', 'Ensemble Valhalla', 'Hornbill Music Festival', 'Karbi Youth Festival', 'Lollapalooza India', 'Makar Sankranti Festival Sonar', 'Me.Gong Festival', 'Mising Youth Festival', 'Mood Indigo', 'Myntra Glamfest', 'One8 Global Premiere', 'Rolling Loud', 'Royal Stag Boombox', 'Ziro Music Festival', 'And many more'] },
 ]
 
 export const work = [
