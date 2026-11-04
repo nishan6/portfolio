@@ -64,7 +64,8 @@ $('#feed-sources').innerHTML = work.map((w, i) => `
 const ledRows = wall.filter((r) => r.items.length);
 $('#led').innerHTML = ledRows.map((r, i) => {
   const run = r.items.map((n) => `<span>${n}</span><i aria-hidden="true"></i>`).join('');
-  const secs = Math.max(18, r.items.join('').length * 0.55);
+  // Constant reading speed: duration scales with the row's length
+  const secs = Math.max(30, r.items.join('').length * 0.9);
   return `<div class="led-row" data-row="${i % 3}">
     <span class="led-label">${r.label}</span>
     <div class="led-track" style="--dur:${secs}s;--dir:${i % 2 ? 'reverse' : 'normal'}">

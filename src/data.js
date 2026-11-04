@@ -44,9 +44,9 @@ export const formats = ['Concerts and festivals', 'Esports', 'Live sport', 'Corp
 
 // LED wall rows, alphabetical. Each non-empty list becomes one scrolling row.
 export const wall = [
-  { label: 'Clients', items: ['BookMyShow', 'Ferrari', 'Google', 'HCL', 'HSBC', 'IIT-BOM', 'Magnanimous Ventures', 'Me.gong', 'Meta', 'Mysuru Yuva Dasara', 'Nodwin', 'Rockski EMG', 'Tesseract', 'TM Talent Management', 'VAS.Inc', 'Zomato'] },
+  { label: 'Clients', items: ['BookMyShow', 'Ferrari', 'Google', 'HCL', 'HSBC', 'IIT Bombay', 'Magnanimous Ventures', 'Me.gong Festivals', 'Meta', 'Mysuru Yuva Dasara', 'Nodwin', 'Rockski EMG', 'Tesseract', 'TM Talent Management', 'VAS.Inc', 'Zomato'] },
   { label: 'Artists', items: ['Akon', 'Alan Walker', 'Arijit Singh', 'Blue', 'Boney M.', 'Clean Bandit', 'Euphoria', 'Europe', 'Gajendra Verma', 'Girish and the Chronicles', "Guns N' Roses", 'Hybrid Theory', 'Indus Creed', 'Jasleen Royal', 'Jay Sean', 'Jonas Blue', 'Karan Aujla', 'Marcin', 'Michael Learns to Rock', 'Mr. Big', 'Ne-Yo', 'Pink Panda', 'Post Malone', 'Pritam', 'R3HAB', 'Rito Riba', 'Ronan Keating', 'Salim-Sulaiman', 'Sanam', 'Shankuraj Konwar', 'Shilpa Rao', 'Sunidhi Chauhan', 'Tsumyoki', 'Udita Goswami', 'Yungblud', 'And many more'] },
-  { label: 'Shows', items: ['Bandland', 'Bollywood Music Project', 'Cherry Blossom Festival', 'Coke Studio Bharat', 'Coke Studio Bharat Live', 'Ensemble Valhalla', 'Hornbill Music Festival', 'Karbi Youth Festival', 'Lollapalooza India', 'Makar Sankranti Festival Sonar', 'Me.Gong Festival', 'Mising Youth Festival', 'Mood Indigo', 'Myntra Glamfest', 'One8 Global Premiere', 'Rolling Loud', 'Royal Stag Boombox', 'Ziro Music Festival', 'And many more'] },
+  { label: 'Shows', items: ['Bandland', 'Bollywood Music Project', 'Cherry Blossom Festival', 'Coke Studio Bharat Live', 'Ensemble Valhalla', 'Hornbill Music Festival', 'Karbi Youth Festival', 'Lollapalooza India', 'Makar Sankranti Festival Sonar', 'Me.gong Festivals', 'Mising Youth Festival', 'Mood Indigo', 'Myntra Glamfest', 'One8 Global Premiere', 'Rolling Loud', 'Royal Stag Boombox', 'Ziro Music Festival', 'And many more'] },
 ]
 
 export const work = [
@@ -55,7 +55,7 @@ export const work = [
     title: 'Music festivals and concerts',
     years: 'Festival main stages',
     role: 'Live visual director and vision mixer',
-    detail: 'Multi-cam IMAG for festival main stages and headline concerts, including Shillong Cherry Blossom Festival, Me.Gong Festival, Myntra Glamfest, Coke Studio Bharat Live and Royal Stag Boombox.',
+    detail: 'Multi-cam IMAG for festival main stages and headline concerts, including Shillong Cherry Blossom Festival, Me.gong Festivals, Myntra Glamfest, Coke Studio Bharat Live and Royal Stag Boombox.',
     specs: ['Multi-cam IMAG', 'LED walls', 'Cut to the music'],
     img: 'img/cherry-blossom.webp',
   },
