@@ -92,6 +92,9 @@ $('#mail-text').textContent = person.email;
 $('#wa-link').href = person.whatsapp;
 $('#li-link').href = person.linkedin;
 $('#phone-text').textContent = person.phone;
+const alt = $('#mail-alt');
+alt.href = `mailto:${person.emailAlt}`;
+alt.textContent = person.emailAlt;
 
 /* ---------------- Smooth scroll ---------------- */
 

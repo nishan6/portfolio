@@ -8,6 +8,7 @@ export const person = {
   roles: ['Online director', 'Vision mixer', 'Broadcast DOP'],
   tagline: 'Cutting cameras, creating moments',
   email: 'worknishanwork@gmail.com',
+  emailAlt: 'nishan@hmbl.in',
   phone: '+91 76570 21140',
   whatsapp: 'https://wa.me/917657021140',
   linkedin: 'https://www.linkedin.com/in/nishanhere',
@@ -44,7 +45,7 @@ export const formats = ['Concerts and festivals', 'Esports', 'Live sport', 'Corp
 // LED wall rows. Each non-empty list becomes one scrolling row.
 export const wall = [
   { label: 'Clients', items: ['Zomato', 'HCL', 'TM Talent Management', 'Mysuru Yuva Dasara', 'Rockski EMG', 'Tesseract', 'Nodwin', 'Me.gong', 'VAS.Inc', 'Magnanimous Ventures'] },
-  { label: 'Artists', items: ['Arijit Singh', 'Sunidhi Chauhan', 'Jasleen Royal', 'Shilpa Rao', 'Karan Aujla', 'Ronan Keating', 'Rito Riba', 'Shankuraj Konwar', 'Boney M.', 'Akon', 'Clean Bandit', 'R3HAB', 'Sanam', 'And many more'] },
+  { label: 'Artists', items: ['Arijit Singh', 'Sunidhi Chauhan', 'Jasleen Royal', 'Shilpa Rao', 'Karan Aujla', 'Ronan Keating', 'Rito Riba', 'Shankuraj Konwar', 'Boney M.', 'Akon', 'Clean Bandit', 'R3HAB', 'Alan Walker', 'Sanam', 'And many more'] },
   { label: 'Shows', items: ['Cherry Blossom Festival', 'Myntra Glamfest', 'Me.Gong Festival', 'Karbi Youth Festival', 'Mising Youth Festival', 'Makar Sankranti Festival Sonar', 'Coke Studio Bharat Live', 'Royal Stag Boombox', 'Bollywood Music Project', 'Ensemble Valhalla', 'And many more'] },
 ]
 
