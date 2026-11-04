@@ -664,11 +664,13 @@ main { position: relative; z-index: 1; }
 }
 
 /* ---------- Gear rack ---------- */
-.gear-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; max-width: 1320px; margin-bottom: 28px; }
+.gear-head { display: grid; justify-items: center; gap: 12px; max-width: 1100px; margin: 0 auto 32px; text-align: center; }
+.gear-head .h-sec { max-width: none; text-wrap: balance; }
 .gear-head .h-sec { margin: 0; }
-.gear-head p { margin: 0; color: var(--gray-2); }
+.gear-head p { margin: 0; color: var(--gray-2); max-width: 36em; }
 .rack {
-  max-width: 1320px;
+  max-width: 1100px;
+  margin: 0 auto;
   padding: 10px 0;
   background: #0a0a0a;
   border-left: 22px solid #1b1b1b; border-right: 22px solid #1b1b1b;
@@ -698,7 +700,22 @@ main { position: relative; z-index: 1; }
   font-size: 14px; line-height: 1.2; padding: 6px 10px;
   background: #0d0d0d; border: 1px solid #2f2f2f; border-radius: 3px;
 }
-.ru-empty { font-family: var(--mono); font-size: 12px; color: var(--gray); }
+.ru-body { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-width: 0; }
+.ru-items li[hidden] { display: none; }
+.ru-toggle {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 5px 10px 5px 6px; min-height: 30px;
+  background: transparent; border: 1px dashed #4a4a4a; border-radius: 3px;
+  font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--gray-2);
+  cursor: pointer; transition: border-color .15s, color .15s;
+}
+.ru-toggle:hover { border-color: var(--pvw); color: var(--white); }
+.ru-plus {
+  width: 18px; height: 18px; display: grid; place-items: center;
+  background: var(--pvw); color: var(--black); border-radius: 2px;
+  font-weight: 700; font-size: 14px; line-height: 1;
+}
+.ru-toggle[aria-expanded='true'] .ru-plus { background: #3a3a3a; color: var(--white); }
 .ru-vent { width: 90px; height: 26px; background: repeating-linear-gradient(90deg, #0a0a0a 0 3px, transparent 3px 7px); opacity: .9; }
 .ru:hover { background: linear-gradient(#242424, #191919); }
 @media (max-width: 899px) {
@@ -706,7 +723,7 @@ main { position: relative; z-index: 1; }
   .rack::before, .rack::after { width: 10px; background-size: 10px 18px; background-image: radial-gradient(circle, #050505 2px, transparent 2.5px); }
   .rack::before { left: -10px; } .rack::after { right: -10px; }
   .ru { grid-template-columns: 14px 1fr; gap: 10px 12px; }
-  .ru-items, .ru-empty { grid-column: 1 / -1; }
+  .ru-body { grid-column: 1 / -1; }
   .ru-vent { display: none; }
 }
 

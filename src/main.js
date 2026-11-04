@@ -74,17 +74,30 @@ $('#led').innerHTML = ledRows.map((r, i) => {
   </div>`;
 }).join('');
 
-// Gear rack
-$('#rack').innerHTML = gear.map((g) => {
-  const has = g.items.length > 0;
+// Gear rack: each unit shows its first few items; a + button opens the rest
+const RACK_SHOW = 4;
+$('#rack').innerHTML = gear.map((g, gi) => {
+  const extra = Math.max(0, g.items.length - RACK_SHOW);
+  const items = g.items.map((it, i) => `<li${i >= RACK_SHOW ? ' class="ru-more" hidden' : ''}>${it}</li>`).join('');
   return `
-  <div class="ru ${has ? 'on' : 'wait'}">
+  <div class="ru on">
     <span class="ru-led"></span>
     <span class="ru-name">${g.unit}</span>
-    ${has ? `<ul class="ru-items">${g.items.map((it) => `<li>${it}</li>`).join('')}</ul>` : '<span class="ru-empty">Patch list coming soon</span>'}
+    <div class="ru-body">
+      <ul class="ru-items" id="ru-items-${gi}">${items}</ul>
+      ${extra ? `<button type="button" class="ru-toggle" aria-expanded="false" aria-controls="ru-items-${gi}" data-more="${extra}"><span class="ru-plus" aria-hidden="true">+</span><span class="ru-label">${extra} more</span></button>` : ''}
+    </div>
     <span class="ru-vent"></span>
   </div>`;
 }).join('');
+$$('.ru-toggle').forEach((btn) => btn.addEventListener('click', () => {
+  const open = btn.getAttribute('aria-expanded') !== 'true';
+  btn.setAttribute('aria-expanded', String(open));
+  $$('.ru-more', btn.closest('.ru')).forEach((li) => { li.hidden = !open; });
+  $('.ru-plus', btn).textContent = open ? '\u2212' : '+';
+  $('.ru-label', btn).textContent = open ? 'Show less' : `${btn.dataset.more} more`;
+  ScrollTrigger.refresh();
+}));
 
 // Contact
 const mail = $('#mail-link');

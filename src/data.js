@@ -64,8 +64,8 @@ export const work = [
     title: 'SPS LAN Esports Championship',
     years: '2023 to present',
     role: 'Broadcast DOP',
-    detail: 'A 16-team arena production with live commentary and sponsor graphics, covered by 77 cameras.',
-    specs: ['77 cameras', '16 teams', 'Live commentary'],
+    detail: 'An arena esports production with live commentary and sponsor graphics, covered by 77 cameras.',
+    specs: ['77 cameras', 'Arena production', 'Live commentary'],
     img: 'img/sps-lan.webp',
   },
   {
@@ -74,7 +74,7 @@ export const work = [
     years: '2025',
     role: 'Broadcast DOP',
     detail: 'Camera plan and coverage for BGIS: 77 cameras, live commentary and sponsor integration.',
-    specs: ['77 cameras', '16 teams', 'Sponsor graphics'],
+    specs: ['77 cameras', 'Live commentary', 'Sponsor graphics'],
     img: 'img/bgis-2025.webp',
   },
   {
@@ -91,8 +91,8 @@ export const work = [
     title: 'Corporate and brand broadcasts',
     years: 'Multiple clients',
     role: 'Creative producer',
-    detail: 'Multi-platform live shows with sponsor integration and highlight reels turned around fast.',
-    specs: ['Multi-platform', 'Sponsor integration', 'Highlight reels'],
+    detail: 'Multi-platform live shows and streams with sponsor integration.',
+    specs: ['Multi-platform', 'Sponsor integration', 'Live streaming'],
     img: 'img/corporate-rig.webp',
   },
   {
@@ -107,7 +107,7 @@ export const work = [
   },
 ];
 
-// Gear rack: one rack unit per category.
+// Gear rack: one rack unit per category. The first RACK_SHOW items show; the rest open with the + button.
 export const gear = [
   { unit: 'Production switchers', items: ['Blackmagic ATEM Constellation', 'ATEM 2 M/E Production Studio', 'Ross Carbonite', 'Sony XVS', 'Roland V-160HD', 'vMix'] },
   { unit: 'Cameras and systems', items: ['Sony HDC-3100', 'Sony HDC-4300', 'Sony PXW-Z750', 'Blackmagic URSA Broadcast G2', 'Blackmagic PYXIS 6K', 'Panasonic AK-UC4000', 'RED', 'ARRI', 'Jib / crane', 'Steadicam / gimbal'] },
