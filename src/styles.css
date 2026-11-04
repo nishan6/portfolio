@@ -513,9 +513,10 @@ main { position: relative; z-index: 1; }
 }
 
 /* ---------- Craft (rundown) ---------- */
-.craft-head { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: end; max-width: 1320px; margin-bottom: 40px; }
-.craft-intro { color: var(--gray-2); max-width: 34em; margin: 0 0 0.6em; }
-.craft-list { list-style: none; margin: 0; padding: 0; max-width: 1320px; border-top: 1px solid var(--line); }
+.craft-head { display: grid; justify-items: center; gap: 12px; max-width: 1100px; margin: 0 auto 40px; text-align: center; }
+.craft-head .h-sec { margin: 0; max-width: none; }
+.craft-intro { color: var(--gray-2); max-width: 36em; margin: 0 auto; }
+.craft-list { list-style: none; margin: 0 auto; padding: 0; max-width: 1100px; border-top: 1px solid var(--line); }
 .craft-item {
   position: relative;
   display: grid; grid-template-columns: 90px minmax(0, 1.1fr) minmax(0, 1fr); gap: 24px; align-items: baseline;
@@ -540,7 +541,6 @@ main { position: relative; z-index: 1; }
 }
 .craft-body { margin: 0; color: var(--gray-2); max-width: 34em; padding-right: 12px; transition: color .2s; }
 @media (max-width: 899px) {
-  .craft-head { grid-template-columns: 1fr; gap: 0; }
   .craft-item { grid-template-columns: 1fr; gap: 10px; padding: 22px 12px; }
   .craft-tag { padding-left: 0; }
 }
@@ -759,7 +759,7 @@ main { position: relative; z-index: 1; }
 }
 
 /* What I do: formats and countdown tags */
-.formats { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.formats { list-style: none; margin: 18px 0 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
 .formats li { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; padding: 5px 10px; border: 1px solid var(--line-2); color: var(--gray-2); }
 .craft-tag { font-variant-numeric: tabular-nums; font-weight: 700; }
 
