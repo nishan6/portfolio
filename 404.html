@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Signal lost (404) — Nishan Abraham Pani</title>
+  <meta name="robots" content="noindex" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="nf-bar">
+    <div class="nf-bar-left">
+      <span class="nf-tally"><i class="nf-lamp"></i>OFF AIR</span>
+      <a class="nf-name" href="/">Nishan Abraham Pani</a>
+    </div>
+    <div class="nf-bar-mid"><span class="nf-label">PGM</span> <span class="nf-src">NO SIGNAL</span></div>
+    <div class="nf-bar-right"><span class="nf-label">TC</span> <span id="tc">00:00:00:00</span> <span class="nf-label nf-fmt">25P</span></div>
+  </header>
+
+  <main class="nf-main">
+    <div class="rig">
+      <div class="monitor">
+        <div class="tally-strip" aria-hidden="true"></div>
+        <div class="bezel">
+          <div class="screen" id="screen" title="Click to re-sync">
+            <canvas id="gl" aria-label="Animated no-signal screen showing error 404"></canvas>
+          </div>
+        </div>
+        <div class="chin">
+          <div class="leds" aria-hidden="true"><span class="led red"></span>TALLY <span class="led on"></span>SDI <span class="led"></span>REF</div>
+          <div class="umd" id="umd">PGM · 404</div>
+          <div class="knobs" aria-hidden="true"><span class="knob"></span><span class="knob"></span><span class="knob"></span></div>
+        </div>
+      </div>
+      <div class="stand" aria-hidden="true"></div>
+    </div>
+
+    <section class="copy">
+      <div class="eyebrow">Error 404 · Input not found</div>
+      <h1>We lost the feed.</h1>
+      <p>This page isn't on any input. Let's cut back to program before anyone in the gallery notices.</p>
+      <div class="actions">
+        <a class="btn primary" id="cut" href="/">Cut to program <kbd>↵</kbd></a>
+        <a class="btn ghost" href="/#feeds">View the work</a>
+      </div>
+      <div class="hint">Click the monitor to re-sync</div>
+    </section>
+  </main>
+
+  <div class="flash" id="flash"></div>
+  <script type="module" src="/src/notfound.js"></script>
+</body>
+</html>
